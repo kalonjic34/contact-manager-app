@@ -7,20 +7,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('/',function(){
-    $html ="
-    <h1>Contact Management App</h1>
-    <div>
-        <a href='" .route('contacts.index')."'>All contacts</a>
-        <a href='".route('contacts.create')."'>Add contacts</a>
-        <a href='".route('contacts.show',1)."'>Show contacts</a>
-    </div>
-    ";
-    return  $html;
-});
-
 Route::get('/contact/',function(){
-    return '<h1>All contacts</h1>';
+    return view('contacts.index');
 })->name('contacts.index');
 
 
@@ -32,4 +20,6 @@ Route::get('/contacts/{id}',function($id){
     return 'Contact: '.$id;
 })->name('contacts.show');
 
-
+Route::fallback(function(){
+    return '<h1>Sorry, the page does not exist</h1>';
+});
