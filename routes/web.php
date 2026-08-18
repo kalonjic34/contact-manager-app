@@ -16,9 +16,15 @@ Route::get('/', function () {
 });
 
 Route::get('/contact/',function(){
+
+    $companies = [
+        1=>['name'=>"Company One", 'contacts'=>'3'],
+        2=>['name'=>"Company Two", 'contacts'=>'5'],
+
+    ];
     $contacts= get_contacts();
 
-    return view('contacts.index', compact('contacts'));
+    return view('contacts.index', compact('contacts','companies'));
 })->name('contacts.index');
 
 
