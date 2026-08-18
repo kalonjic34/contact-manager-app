@@ -19,7 +19,7 @@
                   </div>
                 </div>
               <div class="card-body">
-                @include('contacts.filter')
+                @include('contacts._filter')
                 <table class="table table-striped table-hover">
                   <thead>
                     <tr>
