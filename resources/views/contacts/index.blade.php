@@ -32,13 +32,7 @@
                     </tr>
                    </thead>
                 <tbody>
-                    {{-- @forelse ($contacts as $id => $contact)                        
-                      @include('contacts._contact',['contact'=>$contact])
 
-                    @empty
-                    <p>No contact found</p>
-
-                  @endforelse --}}
                   @each('contacts._contact',$contacts,'contact','contacts._empty')
                     
                   </tbody>
