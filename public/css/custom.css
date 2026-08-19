@@ -1,6 +1,7 @@
 body {
 	font-family: 'Varela Round', sans-serif;
-	background-color: #f7f7f7;
+	background-color: #f5f7f4;
+	color: #17252b;
 }
 
 .navbar {
@@ -15,11 +16,74 @@ body {
 	font-weight: bold;
 	letter-spacing: -1px;
 	font-size: 20px;
-	color: #dd5638;
+	color: #e05d44;
+}
+
+.landing-hero {
+	background: linear-gradient(135deg, #17252b 0%, #243d42 62%, #d9eee2 160%);
+	color: #fff;
+	padding-bottom: 6rem !important;
+}
+
+.landing-hero h1 {
+	max-width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: -1px;
+}
+
+.landing-hero .lead {
+	color: #dce8e3;
+}
+
+.eyebrow,
+.feature-number {
+	color: #f3a38b;
+	font-size: 0.75rem;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.landing-hero .btn-primary,
+.plan-featured .btn-primary {
+	background-color: #e05d44;
+	border-color: #e05d44;
+}
+
+.landing-hero .btn-outline-secondary {
+	border-color: #b9d5c8;
+	color: #fff;
+}
+
+.container>.row>.col-lg-4 {
+	padding-top: 1rem;
+}
+
+.container>.row>.col-lg-4 h3 {
+	margin-top: 0.75rem;
+}
+
+.feature-number {
+	color: #e05d44;
+}
+
+.pricing-section {
+	background-color: #fff;
+}
+
+.pricing-section .card {
+	border: 1px solid #e2e9e4;
+	border-radius: 8px;
+}
+
+.plan-featured {
+	border: 2px solid #e05d44 !important;
+	transform: translateY(-8px);
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
-    color: #435d7d;
+	color: #435d7d;
 }
 
 .fileinput {
@@ -27,13 +91,13 @@ body {
 }
 
 .btn-circle {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 12px;
-  line-height: 1.428571429;
-  border-radius: 15px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 6px 0;
+	font-size: 12px;
+	line-height: 1.428571429;
+	border-radius: 15px;
 }
 
 ul.pagination {
@@ -41,13 +105,13 @@ ul.pagination {
 }
 
 .card-title {
-    color: #fff;
-    background: #435d7d;
-    padding: 16px 20px;
+	color: #fff;
+	background: #435d7d;
+	padding: 16px 20px;
 }
 
 .footer {
-	background-color: #435d7d; 
+	background-color: #435d7d;
 	color: #f7f7f7;
 }
 
