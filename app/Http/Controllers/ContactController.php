@@ -2,17 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\CompanyRepository;
 use Illuminate\Http\Request;
 use Nette\Utils\Type;
 
 class ContactController extends Controller
 {
-    public function index(){
-         $companies = [
-        1=>['name'=>"Company One", 'contacts'=>'3'],
-        2=>['name'=>"Company Two", 'contacts'=>'5'],
+    public function __construct(protected CompanyRepository $company){
 
-    ];
+    }
+
+    public function index(CompanyRepository $company){
+    //      $companies = [
+    //     1=>['name'=>"Company One", 'contacts'=>'3'],
+    //     2=>['name'=>"Company Two", 'contacts'=>'5'],
+
+    // ];
+
+    $companies = $company->pluck();
     $contacts =$this-> get_contacts();
 
     return view('contacts.index', compact('contacts','companies'));
